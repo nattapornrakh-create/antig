@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ติดต่อฉัน | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #fff0f8, #f0edff);
+            color: #302b45;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, .95);
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(139, 92, 246, .12);
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #7c3aed;
+            font-weight: bold;
+            margin: 4px;
+            padding: 9px 13px;
+            border-radius: 20px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            background: #f3e8ff;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #fce7f3;
+            color: #a855f7;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin: 20px 0 10px;
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 18px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #eadcff;
+            border-radius: 35px;
+            padding: 55px 30px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(139, 92, 246, .15);
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .facebook-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 16px 32px;
+            border-radius: 35px;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            box-shadow: 0 12px 25px rgba(139, 92, 246, .30);
+            transition: .3s;
+        }
+
+        .facebook-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 30px rgba(139, 92, 246, .35);
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            color: #7c3aed;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 80px;
+            background: #302b45;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width:700px) {
+            h1 {
+                font-size: 35px;
+            }
+
+            .card {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">🏠 หน้าแรก</a>
+        <a href="about.html">👩 เกี่ยวกับฉัน</a>
+        <a href="activity.html">🎨 กิจกรรม</a>
+        <a href="favorite.html">📷 สิ่งที่ชอบ</a>
+        <a href="certificate.html">🏆 เกียรติบัตร</a>
+        <a href="goal.html">🎯 เป้าหมาย</a>
+        <a href="digital.html">👩‍💻 ด้านดิจิทัล</a>
+        <a href="contact.html">💌 ติดต่อ</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="header">
+
+            <span class="badge">💌 Contact</span>
+
+            <h1>ติดต่อฉัน</h1>
+
+            <p class="subtitle">
+                ขอบคุณที่เข้ามาชม Portfolio ของฉัน
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <p>
+                หากต้องการติดต่อหรือพูดคุย
+                สามารถติดต่อฉันผ่าน Facebook ได้ที่นี่
+            </p>
+
+            <!-- Facebook ของคุณ -->
+            <a href="https://www.facebook.com/share/19XLesTDtd/?mibextid=wwXIfr" target="_blank"
+                rel="noopener noreferrer" class="facebook-btn">
+                💙 Facebook | ติดต่อฉัน
+            </a>
+
+            <br>
+
+            <a href="index.html" class="back">
+                ← กลับหน้าแรก
+            </a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 นัฐพร ระฆังทอง · Digital Business Portfolio 💜
+    </footer>
+
+</body>
+
+</html>

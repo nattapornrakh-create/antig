@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กิจกรรม | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #fff0f8, #f0edff);
+            color: #302b45;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, .95);
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(139, 92, 246, .12);
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #7c3aed;
+            font-weight: bold;
+            margin: 4px;
+            padding: 9px 13px;
+            border-radius: 20px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            background: #f3e8ff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 55px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 35px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(139, 92, 246, .15);
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            max-height: 650px;
+            object-fit: contain;
+            display: block;
+            margin: auto;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(139, 92, 246, .15);
+        }
+
+        h1 {
+            margin: 30px 0 15px;
+            font-size: 42px;
+            color: #a855f7;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media(max-width:700px) {
+            .card {
+                padding: 25px
+            }
+
+            h1 {
+                font-size: 32px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">🏠 หน้าแรก</a>
+        <a href="about.html">👩 เกี่ยวกับฉัน</a>
+        <a href="activity.html">🎨 กิจกรรม</a>
+        <a href="favorite.html">📷 สิ่งที่ชอบ</a>
+        <a href="certificate.html">🏆 เกียรติบัตร</a>
+        <a href="goal.html">🎯 เป้าหมาย</a>
+        <a href="digital.html">👩‍💻 ด้านดิจิทัล</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="assets/images/activity.jpg" alt="กิจกรรม">
+
+            <h1>🎨 กิจกรรม</h1>
+
+            <p>
+                รวบรวมกิจกรรมและประสบการณ์ต่าง ๆ
+                ที่ฉันได้เข้าร่วม ทั้งกิจกรรมในสถานศึกษา
+                กิจกรรมการเรียนรู้ และกิจกรรมที่ช่วยพัฒนา
+                ทักษะและประสบการณ์ของฉัน
+            </p>
+
+            <a href="index.html" class="btn">← กลับหน้าแรก</a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

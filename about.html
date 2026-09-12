@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>เกี่ยวกับฉัน | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #fff0f8, #f1edff);
+            color: #302b45;
+            min-height: 100vh;
+        }
+
+        /* ================= MENU ================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .97);
+            padding: 18px 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(139, 92, 246, .12);
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #7c3aed;
+            font-weight: bold;
+            margin: 4px;
+            padding: 9px 13px;
+            border-radius: 20px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            background: #f3e8ff;
+            transform: translateY(-2px);
+        }
+
+        /* ================= CONTAINER ================= */
+
+        .container {
+            max-width: 1050px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 35px;
+            padding: 45px;
+            box-shadow: 0 20px 50px rgba(139, 92, 246, .15);
+        }
+
+        /* ================= HEADER ================= */
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .header p {
+            color: #777;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        /* ================= PROFILE ================= */
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            width: 280px;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(139, 92, 246, .18);
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h2 {
+            font-size: 32px;
+            color: #7c3aed;
+            margin-bottom: 15px;
+        }
+
+        .profile-text p {
+            font-size: 17px;
+            line-height: 2;
+            color: #666;
+        }
+
+        /* ================= INFORMATION ================= */
+
+        .info-title {
+            text-align: center;
+            color: #8b5cf6;
+            font-size: 28px;
+            margin: 35px 0 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #fff5fb, #f5efff);
+            border: 1px solid #eadcff;
+            border-radius: 22px;
+            padding: 22px;
+            transition: .3s;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(139, 92, 246, .12);
+        }
+
+        .info-box .icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .info-box h3 {
+            color: #7c3aed;
+            margin-bottom: 7px;
+        }
+
+        .info-box p {
+            color: #666;
+            line-height: 1.7;
+            word-break: break-word;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            margin-top: 35px;
+            padding: 30px;
+            background: #faf7ff;
+            border-radius: 25px;
+            border: 1px solid #eadcff;
+        }
+
+        .about h2 {
+            color: #ec4899;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #666;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        /* ================= BUTTON ================= */
+
+        .btn {
+            display: block;
+            width: max-content;
+            margin: 35px auto 0;
+            padding: 14px 30px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(139, 92, 246, .25);
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            margin-top: 50px;
+            padding: 25px;
+            background: #302b45;
+            color: white;
+            text-align: center;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media(max-width:750px) {
+
+            .main-card {
+                padding: 25px;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile img {
+                width: 250px;
+                height: 300px;
+            }
+
+            .header h1 {
+                font-size: 35px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= MENU ================= -->
+
+    <nav>
+
+        <a href="index.html">🏠 หน้าแรก</a>
+
+        <a href="about.html">👩 เกี่ยวกับฉัน</a>
+
+        <a href="activity.html">🎨 กิจกรรม</a>
+
+        <a href="favorite.html">📷 สิ่งที่ชอบ</a>
+
+        <a href="certificate.html">🏆 เกียรติบัตร</a>
+
+        <a href="goal.html">🎯 เป้าหมาย</a>
+
+        <a href="digital.html">💖 งานอดิเรก</a>
+
+        <a href="contact.html">💌 ติดต่อฉัน</a>
+
+    </nav>
+
+
+    <!-- ================= CONTENT ================= -->
+
+    <div class="container">
+
+        <div class="main-card">
+
+
+            <!-- หัวข้อ -->
+
+            <div class="header">
+
+                <h1>👩 เกี่ยวกับฉัน</h1>
+
+                <p>
+                    ทำความรู้จักกับฉันและข้อมูลส่วนตัว
+                </p>
+
+            </div>
+
+
+            <!-- ================= PROFILE ================= -->
+
+            <div class="profile">
+
+                <img src="assets/images/profile.jpg" alt="รูปของนัฐพร">
+
+                <div class="profile-text">
+
+                    <h2>
+                        นัฐพร ระฆังทอง
+                    </h2>
+
+                    <p>
+                        สวัสดีค่ะ ฉันชื่อ <strong>นัฐพร ระฆังทอง</strong>
+                        เป็นนักศึกษาที่มีความสนใจด้านการเรียนรู้
+                        เทคโนโลยี การออกแบบ และการพัฒนาทักษะใหม่ ๆ
+                        พร้อมเปิดรับประสบการณ์และพัฒนาตนเองอยู่เสมอ
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONTACT INFORMATION ================= -->
+
+
+
+
+            <div class="info-grid">
+
+
+                <!-- โทรศัพท์ -->
+
+                <div class="info-box">
+
+                    <div class="icon">
+                        📞
+                    </div>
+
+                    <h3>
+                        เบอร์โทรศัพท์
+                    </h3>
+
+                    <p>
+                        0942835313
+                    </p>
+
+                </div>
+
+
+                <!-- LINE -->
+
+                <div class="info-box">
+
+                    <div class="icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        Line
+                    </h3>
+
+                    <p>
+                        0942835313
+                    </p>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="info-box">
+
+                    <div class="icon">
+                        📧
+                    </div>
+
+                    <h3>
+                        อีเมล
+                    </h3>
+
+                    <p>
+                        nattaporn.rakh@nvc.ac.th
+                    </p>
+
+                </div>
+
+
+                <!-- การศึกษา -->
+
+                <div class="info-box">
+
+                    <div class="icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        สาขาที่สนใจ
+                    </h3>
+
+                    <p>
+                        ธุรกิจดิจิทัล (Digital Business)
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= ABOUT ME ================= -->
+
+            <div class="about">
+
+                <h2>
+                    🌷 เรื่องราวเกี่ยวกับฉัน
+                </h2>
+
+                <p>
+                    ฉันเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                    และสนใจการนำเทคโนโลยีมาประยุกต์ใช้
+                    ในการเรียนและการทำงาน
+                    นอกจากนี้ยังชอบการออกแบบ
+                    การสร้างสรรค์ผลงาน และการพัฒนาตนเอง
+                    เพื่อเตรียมความพร้อมสำหรับอนาคต
+                </p>
+
+            </div>
+
+
+            <!-- ================= BACK ================= -->
+
+            <a href="index.html" class="btn">
+                ← กลับหน้าแรก
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 นัฐพร ระฆังทอง · Digital Business Portfolio 💜
+
+    </footer>
+
+</body>
+
+</html>
